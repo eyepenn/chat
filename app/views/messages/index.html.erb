@@ -1,4 +1,15 @@
-<h2>Messages</h2>
+<div id="people">
+	<div id="buyer_input">Buyer: <input type="text" name="buyer"></div>
+	<div id="seller_input">Seller: <input type="text" name="seller"></div>
+	<div class="clear_both"></div>
+</div>
+<div id="holder">
+<div id="messages">
 <% @messages.each do |message| %>
-<%= message.person %> - <%= message.dialog %><br />
+<div class="<%= message.person %>">
+<span class="timestamp"><%= message.created_at.strftime("%l:%M %p") %></span><br /><%= message.dialog %>
+</div>
 <% end %>
+<div class="clear_both"></div>
+</div>
+</div>

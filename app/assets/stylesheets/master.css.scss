@@ -1,0 +1,55 @@
+body {
+	background-color:#000;
+	color:#FFF;
+}
+#holder {
+	width:100%;
+	text-align:center;
+}
+#messages {
+	height:400px;
+	width:300px;
+	border:1px solid #6a6a6a;
+	margin:0 auto 0 auto;
+	overflow: auto;
+	color:#000;
+	background-color:#FFF;
+}
+.buyer {
+	background-color:#e4e3e9;
+	color:#000;
+	width:200px;
+	float:left;
+	border-radius:3px;
+	margin:3px 0 3px 3px;
+	padding:0 4px 4px 8px;
+	text-align:left;
+}
+.seller {
+	background-color:#2a9fff;
+	color:#FFF;
+	width:200px;
+	float:right;
+	border-radius:3px;
+	margin:3px 3px 3px 0px;
+	padding:0 4px 4px 8px;
+	text-align:left;
+}
+.timestamp {
+	text-transform:lowercase;
+	font-size:11px;
+}
+#people {
+	width:100%;
+	margin:10px 0;
+	padding:0 10px;
+}
+#buyer_input {
+	float:left;
+}
+#seller_input {
+	float:right;
+}
+.clear_both {
+	clear:both;
+}
