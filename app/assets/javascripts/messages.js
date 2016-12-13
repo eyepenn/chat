@@ -8,8 +8,7 @@ $(function() {
         var divElement = '<div class="' + message.person + '"><span class="timestamp">' + day + " - " + time + '</span><br />' + message.dialog + '</div>';
         htmlString += divElement;
       });
-      var divMessages = $('#messages');
-      divMessages.html(htmlString);
+      $('#messages').html(htmlString);
     });
 
     $('#buyer-form').submit(function(event) {
@@ -25,8 +24,9 @@ $(function() {
         var day = new Date(message.created_at).toLocaleDateString();
         var time = new Date(message.created_at).toLocaleTimeString().replace(/([\d]+:[\d]{2})(:[\d]{2})(.*)/, "$1$3");
         var divElement = '<div class="' + message.person + '"><span class="timestamp">' + day + " - " + time + '</span><br />' + message.dialog + '</div>';
-        var divMessages = $('#messages');
-        divMessages.append(divElement);
+        if (textbox.val() != '') {
+        $('#messages').append(divElement);
+        }
         textbox.val('');
       });
     });
@@ -44,8 +44,9 @@ $(function() {
         var day = new Date(message.created_at).toLocaleDateString();
         var time = new Date(message.created_at).toLocaleTimeString().replace(/([\d]+:[\d]{2})(:[\d]{2})(.*)/, "$1$3");
         var divElement = '<div class="' + message.person + '"><span class="timestamp">' + day + " - " + time + '</span><br />' + message.dialog + '</div>';
-        var divMessages = $('#messages');
-        divMessages.append(divElement);
+        if (textbox.val() != '') {
+        $('#messages').append(divElement);
+        }
         textbox.val('');
       });
     });
