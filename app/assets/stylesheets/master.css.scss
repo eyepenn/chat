@@ -11,12 +11,12 @@ body {
 	width:300px;
 	border:1px solid #6a6a6a;
 	margin:0 auto 0 auto;
-	overflow: auto;
+	overflow-y: auto;
 	color:#000;
 	background-color:#FFF;
 }
 .buyer {
-	background-color:#e4e3e9;
+	background-color:#d3d3d4;
 	color:#000;
 	width:250px;
 	float:left;
@@ -49,7 +49,7 @@ body {
 }
 #buyer_input {
 	float:left;
-	background-color:#e4e3e9;
+	background-color:#d3d3d4;
 	color:#000000;
 	padding:10px;
 	border-radius:3px;
@@ -60,6 +60,12 @@ body {
 	color:#FFFFFF;
 	padding:10px;
 	border-radius:3px;
+}
+form {
+	display:inline;
+}
+input {
+	color:#000000;
 }
 .clear_both {
 	clear:both;
