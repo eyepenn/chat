@@ -1,6 +1,6 @@
 $(function() {
 
-    $.get("/messages").success( function( data ) {
+    $.get("/messages").success(function(data) {
       var htmlString = '';
        $.each(data, function(index,  message) {
         var day = new Date(message.created_at).toLocaleDateString();
