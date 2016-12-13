@@ -44,11 +44,22 @@ body {
 	margin:10px 0;
 	padding:0 10px;
 }
+#people input {
+	width:280px;
+}
 #buyer_input {
 	float:left;
+	background-color:#e4e3e9;
+	color:#000000;
+	padding:10px;
+	border-radius:3px;
 }
 #seller_input {
 	float:right;
+	background-color:#2a9fff;
+	color:#FFFFFF;
+	padding:10px;
+	border-radius:3px;
 }
 .clear_both {
 	clear:both;
