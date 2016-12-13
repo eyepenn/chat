@@ -42,12 +42,11 @@ body {
 	font-size:11px;
 }
 #people {
-	width:100%;
-	margin:10px 0;
-	padding:0 10px;
+	max-width:700px;
+	margin:10px auto 0 auto;
 }
 #people input {
-	width:280px;
+	width:230px;
 }
 #buyer_input {
 	float:left;
