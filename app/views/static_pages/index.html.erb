@@ -5,11 +5,16 @@
 </div>
 <div id="holder">
 <div id="messages">
-<% @messages.each do |message| %>
-<div class="<%= message.person %>">
-<span class="timestamp"><%= message.created_at.strftime("%m/%d/%Y - %l:%M %p") %></span><br /><%= message.dialog %>
-</div>
-<% end %>
+
 <div class="clear_both"></div>
 </div>
 </div>
+<script>
+  $(function() {
+    $.get("/messages").success( function( data ) {
+       $.each(data, function(index,  message) {
+        console.log(message);
+      });
+    });
+  });
+</script>
