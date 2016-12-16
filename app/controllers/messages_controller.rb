@@ -1,6 +1,6 @@
 class MessagesController < ApplicationController
   def index
-    render json: Message.order(:id)
+    render json: Message.order(:created_at)
   end
 
   def create
