@@ -32,11 +32,11 @@ $(function() {
 
     $('#buyer-form').submit(function(event) {
       event.preventDefault();
-      form_submit('buyer')
+      form_submit('buyer');
     });
 
     $('#seller-form').submit(function(event) {
       event.preventDefault();
-      form_submit('seller')
+      form_submit('seller');
     });
   });
